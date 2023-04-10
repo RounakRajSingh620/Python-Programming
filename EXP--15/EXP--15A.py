@@ -1,33 +1,17 @@
-# 'btn_click' function continuously updates the input field whenever you enters a number
 def btn_click(item):
     global expression
-
-
 expression = expression + str(item)
 input_text.set(expression)
-# 'btn_clear' function clears the input field
-
-
 def btn_clear():
     global expression
     expression = " "
-
-
-input_text.set(" ")
-# 'btn_equal' calculates the expression present in input field
-
-
+    input_text.set(" ")
 def btn_equal():
     global expression
     result = str(eval(expression))
-# 'eval' function evalutes the string expression directly
     input_text.set(result)
     expression = " "
-# 'StringVar()' is used to get the instance of input field
     input_text = StringVar()
-
-
-    # creating a frame for the input field
 input_frame = Frame(window, width=312, height=50, bd=0,
                     highlightbackground="black", highlightcolor="black", highlightthickness=1)
 input_frame.pack(side=TOP)
