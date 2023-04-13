@@ -55,4 +55,4 @@ for x in dfa_states_list:
         if i in nfa_final_state:
             dfa_final_states.append(x)
             break
-  print("\nFinal states of the DFA are : ",dfa_final_states)    
+print("\nFinal states of the DFA are : ",dfa_final_states)    
