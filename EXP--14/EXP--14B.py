@@ -56,4 +56,3 @@ for x in dfa_states_list:
             dfa_final_states.append(x)
             break
 print("\nFinal states of the DFA are : ",dfa_final_states)    
-+
